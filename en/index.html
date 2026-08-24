@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Privacy Policy for GoodPrice Assistant (formerly SMZDM Deal Submission Assistant)">
+  <link rel="canonical" href="https://marco0158.github.io/goodprice-assistant-privacy/en/">
+  <link rel="alternate" hreflang="zh-CN" href="https://marco0158.github.io/goodprice-assistant-privacy/">
+  <link rel="alternate" hreflang="en" href="https://marco0158.github.io/goodprice-assistant-privacy/en/">
+  <title>GoodPrice Assistant Privacy Policy</title>
+  <style>
+    :root {
+      --paper: #f7f3ea;
+      --paper-deep: #eee6d7;
+      --ink: #211d18;
+      --muted: #6d655c;
+      --line: #d7cebe;
+      --accent: #b4212b;
+      --accent-soft: #f2d9d8;
+      --white: #fffdf8;
+      --shadow: 0 24px 70px rgba(67, 52, 35, 0.13);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(96, 74, 46, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(96, 74, 46, 0.025) 1px, transparent 1px),
+        var(--paper-deep);
+      background-size: 24px 24px;
+      font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { text-decoration-thickness: 2px; }
+
+    .page-shell {
+      width: min(1080px, calc(100% - 32px));
+      margin: 40px auto;
+      background: var(--white);
+      border: 1px solid rgba(115, 92, 63, 0.18);
+      box-shadow: var(--shadow);
+    }
+
+    .masthead {
+      position: relative;
+      padding: 72px 72px 58px;
+      overflow: hidden;
+      color: #fffaf2;
+      background:
+        radial-gradient(circle at 88% 22%, rgba(255, 220, 171, 0.19), transparent 24%),
+        linear-gradient(135deg, #801622 0%, #b5222d 54%, #d94a3f 100%);
+    }
+
+    .masthead::after {
+      content: "PRIVACY";
+      position: absolute;
+      right: -15px;
+      bottom: -46px;
+      color: rgba(255, 255, 255, 0.09);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(76px, 13vw, 150px);
+      font-weight: 700;
+      letter-spacing: -0.06em;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .language-switch {
+      position: absolute;
+      z-index: 2;
+      top: 24px;
+      right: 28px;
+      padding: 7px 13px;
+      border: 1px solid rgba(255, 255, 255, 0.42);
+      border-radius: 999px;
+      color: #fffaf2;
+      background: rgba(74, 8, 18, 0.18);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1;
+      text-decoration: none;
+      backdrop-filter: blur(6px);
+    }
+
+    .language-switch:hover {
+      border-color: rgba(255, 255, 255, 0.72);
+      background: rgba(74, 8, 18, 0.3);
+      text-decoration: none;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      opacity: 0.82;
+    }
+
+    h1 {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(36px, 6vw, 66px);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1.08;
+    }
+
+    .subtitle {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 20px 0 0;
+      color: rgba(255, 250, 242, 0.85);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .meta-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-bottom: 1px solid var(--line);
+      background: #fcf8f0;
+    }
+
+    .meta-item {
+      min-width: 0;
+      padding: 20px 28px;
+      border-right: 1px solid var(--line);
+    }
+
+    .meta-item:last-child { border-right: 0; }
+
+    .meta-label {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--muted);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .meta-value {
+      display: block;
+      overflow-wrap: anywhere;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 54px;
+      padding: 58px 72px 80px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 24px;
+      align-self: start;
+      padding-top: 5px;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+    }
+
+    .toc-title {
+      margin: 0 0 15px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: toc;
+    }
+
+    .toc li {
+      counter-increment: toc;
+      border-top: 1px solid var(--line);
+    }
+
+    .toc li:last-child { border-bottom: 1px solid var(--line); }
+
+    .toc a {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 5px;
+      padding: 9px 2px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      text-decoration: none;
+    }
+
+    .toc a::before {
+      content: counter(toc, decimal-leading-zero);
+      color: var(--accent);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .toc a:hover { color: var(--accent); }
+    main { min-width: 0; }
+
+    .lead {
+      margin: 0 0 46px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--line);
+      font-size: 17px;
+    }
+
+    section {
+      scroll-margin-top: 24px;
+      margin: 0 0 52px;
+    }
+
+    h2 {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 16px;
+      margin: 0 0 20px;
+      font-size: 25px;
+      line-height: 1.3;
+    }
+
+    h2::after {
+      content: "";
+      height: 1px;
+      background: linear-gradient(90deg, var(--line), transparent);
+    }
+
+    h3 { margin: 26px 0 10px; font-size: 17px; }
+    p { margin: 0 0 14px; }
+    ul { margin: 10px 0 18px; padding-left: 1.25em; }
+    li { margin-bottom: 7px; }
+
+    .data-table {
+      width: 100%;
+      margin: 20px 0 26px;
+      border-collapse: collapse;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 14px 15px;
+      border: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .data-table th {
+      color: #fff;
+      background: #3a332b;
+      font-weight: 600;
+    }
+
+    .data-table tbody tr:nth-child(even) { background: #faf6ee; }
+
+    .limited-use {
+      margin: 22px 0;
+      padding: 22px 24px;
+      border-left: 5px solid var(--accent);
+      background: var(--accent-soft);
+      font-weight: 700;
+    }
+
+    .contact-card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      background: #faf6ee;
+    }
+
+    .contact-card p:last-child { margin-bottom: 0; }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 24px 72px;
+      color: #e8dfd3;
+      background: #2b2621;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      font-size: 11px;
+    }
+
+    @media (max-width: 820px) {
+      .page-shell { width: 100%; margin: 0; border: 0; }
+      .masthead { padding: 64px 28px 48px; }
+      .masthead h1 { font-size: 32px; letter-spacing: -0.035em; }
+      .subtitle { overflow-wrap: anywhere; font-size: 14px; }
+      .language-switch { top: 18px; right: 18px; }
+      .meta-strip { grid-template-columns: 1fr; }
+      .meta-item { border-right: 0; border-bottom: 1px solid var(--line); }
+      .meta-item:last-child { border-bottom: 0; }
+      .layout { grid-template-columns: 1fr; gap: 36px; padding: 40px 24px 60px; }
+      .toc { position: static; }
+      .data-table { display: block; overflow-x: auto; }
+      footer { flex-direction: column; padding: 22px 24px; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .masthead { color: #000; background: #fff; border-bottom: 3px solid #000; }
+      .masthead::after, .toc, .language-switch { display: none; }
+      .layout { display: block; }
+      section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <article class="page-shell">
+    <header class="masthead">
+      <a class="language-switch" href="../" lang="zh-CN" hreflang="zh-CN">中文</a>
+      <p class="eyebrow">Privacy Policy · Internal Operations Tool</p>
+      <h1>GoodPrice Assistant<br>Privacy Policy</h1>
+      <p class="subtitle">This policy applies to “值得买好价运营助手” (GoodPrice Assistant), formerly named “值得买爆料助手.” The extension is maintained by an individual developer and is available only to authorized internal company personnel.</p>
+    </header>
+
+    <div class="meta-strip" aria-label="Policy details">
+      <div class="meta-item">
+        <span class="meta-label">Effective date</span>
+        <span class="meta-value">August 24, 2026</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Product ID</span>
+        <span class="meta-value">dmoigmeimpignepgeffaoemoppdhlgkg</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Operator</span>
+        <span class="meta-value">Individual Developer</span>
+      </div>
+    </div>
+
+    <div class="layout">
+      <nav class="toc" aria-label="Contents">
+        <p class="toc-title">Contents</p>
+        <ol>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#data">Data We Process</a></li>
+          <li><a href="#purpose">Purposes of Processing</a></li>
+          <li><a href="#storage">Storage and Retention</a></li>
+          <li><a href="#sharing">Sharing and Third Parties</a></li>
+          <li><a href="#permissions">Browser Permissions</a></li>
+          <li><a href="#choices">User Choices and Deletion</a></li>
+          <li><a href="#security">Data Security</a></li>
+          <li><a href="#limited-use">Limited Use Commitment</a></li>
+          <li><a href="#updates">Policy Updates</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ol>
+      </nav>
+
+      <main>
+        <p class="lead">We take user data security seriously. This policy explains how the extension processes, uses, stores, and shares the data necessary to help operations personnel verify product prices, organize promotional information, manage tasks, and publish deal submissions. Except for providing features explicitly used by the user, protecting service security, and collecting the usage statistics disclosed in this policy, we do not use data for other purposes.</p>
+
+        <section id="scope">
+          <h2>1. Scope</h2>
+          <p>This policy applies to GoodPrice Assistant (formerly SMZDM Deal Submission Assistant) when it runs in Chromium-based browsers such as Google Chrome and Microsoft Edge. The extension is maintained by an individual developer as an operations productivity tool for authorized internal company personnel; it is not offered as a service to general consumers.</p>
+          <p>This policy covers only the extension’s own data-processing practices. Data processing by websites and services such as JD.com, Tmall, Lark, SMZDM, and Google Analytics is also governed by their respective privacy policies.</p>
+        </section>
+
+        <section id="data">
+          <h2>2. Data We Process</h2>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Data</th>
+                <th scope="col">How It Is Processed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Data provided by the user</td>
+                <td>Product links, final prices, retailers, promotion details, submitter information, categories, tags, selected products, and spreadsheet fields imported by the user.</td>
+                <td>Used to create, review, edit, and publish deal-submission tasks.</td>
+              </tr>
+              <tr>
+                <td>Web content and browsing activity</td>
+                <td>When the user invokes a feature, the extension may read product URLs, SKUs, product names, prices, coupons, store details, campaign information, page state, and necessary deal-submission fields from supported pages.</td>
+                <td>Processed only on supported websites while the user is using a relevant feature, for product identification, price verification, filtering, and form autofill.</td>
+              </tr>
+              <tr>
+                <td>Clipboard content</td>
+                <td>After the user clicks an explicit entry point such as “Create Task from Clipboard,” the extension reads clipboard text and extracts HTTP/HTTPS product links.</td>
+                <td>Clipboard access is optional. The extension does not continuously read the clipboard when the user has not invoked this feature.</td>
+              </tr>
+              <tr>
+                <td>Authentication and configuration data</td>
+                <td>Internal business API keys configured or obtained by the user through an authorization flow, their validity status, and settings required for publishing, such as the default submitter.</td>
+                <td>Primarily stored in the browser and used only to authenticate requests to the corresponding internal services; not used for advertising.</td>
+              </tr>
+              <tr>
+                <td>Local tasks and preferences</td>
+                <td>Extension preferences, monitoring settings, task progress, success or failure results, published links, and recent task history.</td>
+                <td>Stored locally in the browser to restore tasks, display history, and retain user settings.</td>
+              </tr>
+              <tr>
+                <td>Images, videos, and AI-processed content</td>
+                <td>When the user enables gift parsing or media-processing features, the extension may process product-image URLs, user-selected images or videos, article identifiers, titles, and processing instructions.</td>
+                <td>Sent only to internal business services necessary to provide the requested feature and return gift text or media-processing results.</td>
+              </tr>
+              <tr>
+                <td>Usage and diagnostic data</td>
+                <td>A randomly generated client identifier, session identifier, extension version, features used, platform or domain, task counts, success or failure status, error type, and certain business-object identifiers.</td>
+                <td>Basic usage events may be sent automatically when the extension is opened or a related feature is used, for feature analytics and stability analysis.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>The extension does not intentionally collect government identification numbers, bank-card information, health information, or cross-site behavioral profiles for personalized advertising. It also does not read or store users’ passwords for third-party websites.</p>
+        </section>
+
+        <section id="purpose">
+          <h2>3. Purposes of Processing</h2>
+          <p>We use the data described above only to:</p>
+          <ul>
+            <li>identify products and campaign information, retrieve price history, and evaluate low-price status;</li>
+            <li>create, review, edit, and publish deal-submission tasks initiated by the user;</li>
+            <li>provide user-visible features such as shopping-cart monitoring, campaign-page filtering, search-results filtering, and coupon-bundle selection;</li>
+            <li>perform gift parsing and image or video processing according to the user’s settings;</li>
+            <li>save settings, restore task progress, and display local task history;</li>
+            <li>measure feature usage, troubleshoot failures, and improve stability within the scope disclosed in this policy; and</li>
+            <li>protect internal services, accounts, and the extension against abuse or security threats.</li>
+          </ul>
+        </section>
+
+        <section id="storage">
+          <h2>4. Storage and Retention</h2>
+          <h3>Local browser storage</h3>
+          <p>The extension uses <code>chrome.storage.local</code> to store settings, API keys, task state, recent task history, and a random analytics identifier. This data is stored in the user’s browser profile and is not automatically deleted when a page is closed. Users may delete local data using the extension’s clearing controls, browser extension-data management features, or by uninstalling the extension.</p>
+          <h3>Server-side processing</h3>
+          <p>Data submitted to internal business services for price lookup, publishing, gift parsing, or media processing is retained only for as long as necessary to provide the feature, protect security, and meet internal audit requirements. After that period, data is deleted, anonymized, or overwritten according to the relevant business system’s data-governance rules.</p>
+          <h3>Usage analytics</h3>
+          <p>The random analytics client identifier remains in the browser until the user clears the extension’s data or uninstalls the extension. Usage statistics sent to Google Analytics are retained according to the Google Analytics property settings and the Google Privacy Policy. Analytics data is not used for personalized advertising.</p>
+        </section>
+
+        <section id="sharing">
+          <h2>5. Sharing and Third-Party Services</h2>
+          <p>We do not sell user data, provide it to data brokers, or use it for personalized advertising. Data is transmitted only when necessary in the following circumstances:</p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Recipient</th>
+                <th scope="col">Data That May Be Received</th>
+                <th scope="col">Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Relevant SMZDM internal business services</td>
+                <td>Product links, SKU/Wiki IDs, prices, publishing fields, API keys, and image or media-processing requests.</td>
+                <td>Authentication, price lookup, historical-price evaluation, deal publishing, gift parsing, and media processing.</td>
+              </tr>
+              <tr>
+                <td>Supported websites visited by the user</td>
+                <td>Data submitted or operated on by the user on the corresponding website.</td>
+                <td>Opening product pages, completing forms, and performing publishing actions initiated by the user.</td>
+              </tr>
+              <tr>
+                <td>Google Analytics</td>
+                <td>Random client and session identifiers, version, feature events, platform/domain, result status, and similar usage data.</td>
+                <td>Internal feature measurement, troubleshooting, and stability improvement. This processing is also governed by the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Outside the circumstances described above, we disclose data only when required by law, necessary to protect users or system security, or following a change in the service operator after obtaining any legally required consent.</p>
+        </section>
+
+        <section id="permissions">
+          <h2>6. Browser Permissions</h2>
+          <ul>
+            <li><strong>storage:</strong> Saves settings, task progress, task history, and authorization configuration.</li>
+            <li><strong>tabs / activeTab / scripting:</strong> Identifies, opens, or operates supported product and deal-submission pages when the user invokes a feature.</li>
+            <li><strong>alarms:</strong> Supports task timeouts, polling, and shopping-cart monitoring schedules.</li>
+            <li><strong>sidePanel:</strong> Displays task status and auxiliary controls.</li>
+            <li><strong>system.display:</strong> Positions extension operation windows appropriately in multi-display environments.</li>
+            <li><strong>clipboardRead (optional):</strong> Reads clipboard content and extracts links only after the user clicks a clipboard-import feature.</li>
+            <li><strong>Host permissions:</strong> Runs user-visible features on JD.com, Tmall, SMZDM, Lark, and service domains that provide necessary internal capabilities.</li>
+          </ul>
+        </section>
+
+        <section id="choices">
+          <h2>7. User Choices, Access, and Deletion</h2>
+          <ul>
+            <li>Users may decline the optional clipboard-read permission and paste links manually instead.</li>
+            <li>Users who do not want new usage statistics to be generated may disable or uninstall the extension, or contact us using the email address below.</li>
+            <li>Users may clear task history and related local data, or uninstall the extension and remove its data through the browser.</li>
+            <li>To request access to, correction of, or deletion of data that may be retained by internal business services, contact us using the details below.</li>
+          </ul>
+        </section>
+
+        <section id="security">
+          <h2>8. Data Security</h2>
+          <p>We use reasonable technical and organizational measures to protect data, including limiting extension permissions, restricting access to internal services, requiring authentication, controlling retention, and continually improving data-transport security. Users should safeguard their API keys and must not share them with unauthorized individuals.</p>
+        </section>
+
+        <section id="limited-use">
+          <h2>9. Chrome Web Store Limited Use Commitment</h2>
+          <div class="limited-use">The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</div>
+          <p>Specifically, we use relevant data only to provide or improve the extension’s clearly disclosed single purpose. We do not use the data for personalized advertising, sell it to third parties, or permit humans to read user data unless the user has given explicit consent for specific data, access is necessary for a security investigation, access is required by law, or the data has been aggregated and anonymized and is used only for compliant internal operations.</p>
+        </section>
+
+        <section id="updates">
+          <h2>10. Policy Updates</h2>
+          <p>We may update this policy when the extension’s features, data-processing practices, or applicable requirements change. The effective date at the top of this page will be updated accordingly. If a change materially affects the processing of user data, we will provide a prominent notice through the extension before collecting or using the affected data and will obtain renewed consent where required.</p>
+        </section>
+
+        <section id="contact">
+          <h2>11. Contact Us</h2>
+          <div class="contact-card">
+            <p><strong>Operator:</strong> Individual Developer</p>
+            <p><strong>Email:</strong> <a href="mailto:wangboda@zhidemai.com">wangboda@zhidemai.com</a></p>
+            <p><strong>Product:</strong> GoodPrice Assistant / 值得买好价运营助手 (formerly 值得买爆料助手)</p>
+            <p><strong>Chrome Web Store Product ID:</strong> dmoigmeimpignepgeffaoemoppdhlgkg</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <span>GoodPrice Assistant · Privacy Policy</span>
+      <span>Internal Operations Tool · Authorized Personnel Only</span>
+    </footer>
+  </article>
+</body>
+</html>
