@@ -346,7 +346,7 @@
     <div class="meta-strip" aria-label="Policy details">
       <div class="meta-item">
         <span class="meta-label">Effective date</span>
-        <span class="meta-value">August 24, 2026</span>
+        <span class="meta-value">September 4, 2026</span>
       </div>
       <div class="meta-item">
         <span class="meta-label">Product ID</span>
@@ -413,8 +413,8 @@
               </tr>
               <tr>
                 <td>Authentication and configuration data</td>
-                <td>Internal business API keys configured or obtained by the user through an authorization flow, their validity status, and settings required for publishing, such as the default submitter.</td>
-                <td>Primarily stored in the browser and used only to authenticate requests to the corresponding internal services; not used for advertising.</td>
+                <td>Internal business API keys configured or obtained by the user through an authorization flow, the Superset login-session cookie, their validity status, and settings required for publishing, such as the default submitter.</td>
+                <td>Stored in extension storage or the browser’s cookie store and used only to authenticate requests to the corresponding internal services; not used for advertising.</td>
               </tr>
               <tr>
                 <td>Local tasks and preferences</td>
@@ -454,6 +454,7 @@
           <h2>4. Storage and Retention</h2>
           <h3>Local browser storage</h3>
           <p>The extension uses <code>chrome.storage.local</code> to store settings, API keys, task state, recent task history, and a random analytics identifier. This data is stored in the user’s browser profile and is not automatically deleted when a page is closed. Users may delete local data using the extension’s clearing controls, browser extension-data management features, or by uninstalling the extension.</p>
+          <p>The Superset login-session cookie remains in the browser’s cookie store. The extension uses and manages this session only for the corresponding internal Superset service, to maintain sign-in status and provide queries enabled by the user.</p>
           <h3>Server-side processing</h3>
           <p>Data submitted to internal business services for price lookup, publishing, gift parsing, or media processing is retained only for as long as necessary to provide the feature, protect security, and meet internal audit requirements. After that period, data is deleted, anonymized, or overwritten according to the relevant business system’s data-governance rules.</p>
           <h3>Usage analytics</h3>
@@ -500,6 +501,7 @@
             <li><strong>alarms:</strong> Supports task timeouts, polling, and shopping-cart monitoring schedules.</li>
             <li><strong>sidePanel:</strong> Displays task status and auxiliary controls.</li>
             <li><strong>system.display:</strong> Positions extension operation windows appropriately in multi-display environments.</li>
+            <li><strong>cookies:</strong> Reads and manages the login-session cookie for the internal Superset service to maintain sign-in status and run queries enabled by the user.</li>
             <li><strong>clipboardRead (optional):</strong> Reads clipboard content and extracts links only after the user clicks a clipboard-import feature.</li>
             <li><strong>Host permissions:</strong> Runs user-visible features on JD.com, Tmall, SMZDM, Lark, and service domains that provide necessary internal capabilities.</li>
           </ul>

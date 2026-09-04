@@ -421,7 +421,7 @@
     <div class="meta-strip" aria-label="政策基本信息">
       <div class="meta-item">
         <span class="meta-label">生效日期</span>
-        <span class="meta-value">2026 年 8 月 24 日</span>
+        <span class="meta-value">2026 年 9 月 4 日</span>
       </div>
       <div class="meta-item">
         <span class="meta-label">产品 ID</span>
@@ -488,8 +488,8 @@
               </tr>
               <tr>
                 <td>身份验证与配置数据</td>
-                <td>用户配置或通过授权流程取得的内部业务 API Key、有效状态，以及发布所需的默认爆料人等设置。</td>
-                <td>主要保存在浏览器本地，仅在调用相应内部服务时用于鉴权，不用于广告。</td>
+                <td>用户配置或通过授权流程取得的内部业务 API Key、Superset 登录会话 Cookie、有效状态，以及发布所需的默认爆料人等设置。</td>
+                <td>保存在浏览器的扩展存储或 Cookie 存储中，仅在调用相应内部服务时用于鉴权，不用于广告。</td>
               </tr>
               <tr>
                 <td>本地任务与偏好</td>
@@ -529,6 +529,7 @@
           <h2>四、数据存储与保留</h2>
           <h3>浏览器本地存储</h3>
           <p>扩展使用 <code>chrome.storage.local</code> 保存设置、API Key、任务状态、近期任务历史和随机统计标识。这些数据存储在用户浏览器配置目录中，不会因为关闭页面而自动清除。用户可以通过扩展提供的清理入口、浏览器扩展数据管理功能或卸载扩展删除本地数据。</p>
+          <p>Superset 登录会话 Cookie 保存在浏览器 Cookie 存储中，扩展仅对对应的内部 Superset 服务使用和管理该会话，以维持登录状态并完成用户启用的查询功能。</p>
           <h3>服务端处理</h3>
           <p>为完成价格查询、发布、赠品解析或媒体处理而提交到内部业务服务的数据，仅在提供功能、保障安全和满足内部审计要求所需的期限内保留。超过必要期限后，将根据相关业务系统的数据治理规则删除、匿名化或覆盖。</p>
           <h3>使用统计</h3>
@@ -575,6 +576,7 @@
             <li><strong>alarms：</strong>执行任务超时、轮询和购物车监控计划。</li>
             <li><strong>sidePanel：</strong>展示任务状态和辅助操作界面。</li>
             <li><strong>system.display：</strong>在多显示器环境中合理定位扩展操作窗口。</li>
+            <li><strong>cookies：</strong>读取和管理内部 Superset 服务的登录会话 Cookie，用于维持登录状态并执行用户启用的查询功能。</li>
             <li><strong>clipboardRead（可选）：</strong>仅在用户点击剪贴板导入功能时读取并提取链接。</li>
             <li><strong>网站访问权限：</strong>在京东、天猫、什么值得买、飞书及提供必要内部能力的服务域名上执行用户可见功能。</li>
           </ul>
